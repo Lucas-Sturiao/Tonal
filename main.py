@@ -1,6 +1,5 @@
 import random
 
-# Escala cromática padrão
 notas = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
 
 def gerar_progressao_completa(tonica):
@@ -10,11 +9,10 @@ def gerar_progressao_completa(tonica):
 
     index = notas.index(tonica)
     
-    # Cálculo dos graus usando módulo 12 para dar a volta na lista
     grau_I = notas[index]
     grau_IV = notas[(index + 5) % 12]
     grau_V = notas[(index + 7) % 12]
-    grau_vi = notas[(index + 9) % 12] + "m"  # O 'm' indica que o acorde é menor
+    grau_vi = notas[(index + 9) % 12] + "m"
     
     # Estruturas de progressões famosas
     progressoes = [
